@@ -26,7 +26,7 @@ class Song
   end
   
   def self.genre_count
-    genrehash={}
+    genrehash={"genrename" => amount=0}
     x=0
     y=0
     @@genres.each do |k, v|
