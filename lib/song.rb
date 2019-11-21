@@ -39,8 +39,8 @@ class Song
     artisthash={}
     @@artist.each do |k|
       #binding.pry
-      genrehash[k]=@@artist.count(k)
+      artisthash[k]=@@artist.count(k)
     end
-    return genrehash
+    return artisthash
   end
 end
