@@ -34,4 +34,13 @@ class Song
     end
     return genrehash
   end
+  
+  def self.artist_count
+    artisthash={}
+    @@artist.each do |k|
+      #binding.pry
+      genrehash[k]=@@artist.count(k)
+    end
+    return genrehash
+  end
 end
