@@ -1,3 +1,4 @@
+require 'pry'
 class Song
   attr_accessor :name,:artist,:genre
   @@count = 0 
@@ -30,6 +31,7 @@ class Song
     x=0
     y=0
     @@genres.each do |k, v|
+      binding.pry
       while x!=@@genres.length
         if @@genres[k]!=@@genres[x]
         genrehash[k] << @@genres[k]
