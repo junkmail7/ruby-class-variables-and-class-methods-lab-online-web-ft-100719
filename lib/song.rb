@@ -32,15 +32,15 @@ class Song
     y=0
     @@genres.each do |k, v|
       binding.pry
-      while x!=@@genres.length
-        if @@genres[k]!=@@genres[x]
+      #while x!=@@genres.length
+        #if @@genres[k]!=@@genres[x]
         genrehash[k] << @@genres[k]
         y += 1
         genrehash[k][v] << y
         else
         genrehash[k][v] += 1
         end
-        x+=1
+        #x+=1
       end
     end
     return genrehash
