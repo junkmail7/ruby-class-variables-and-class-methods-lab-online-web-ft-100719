@@ -27,21 +27,10 @@ class Song
   end
   
   def self.genre_count
-    genrehash={"genrename" => amount=0}
-    x=0
-    y=0
-    @@genres.each do |k, v|
+    genrehash={}
+    @@genres.each do |k|
       binding.pry
-      #while x!=@@genres.length
-        #if @@genres[k]!=@@genres[x]
-        genrehash[k] << @@genres[k]
-        y += 1
-        genrehash[k][v] << y
-        else
-        genrehash[k][v] += 1
-        end
-        #x+=1
-      end
+      genrehash[k]=@@genres.count(k)
     end
     return genrehash
   end
