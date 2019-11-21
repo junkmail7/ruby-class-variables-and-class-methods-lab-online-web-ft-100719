@@ -38,6 +38,7 @@ class Song
         else
         genrehash[k][v] += 1
         end
+        x+=1
       end
     end
     return genrehash
